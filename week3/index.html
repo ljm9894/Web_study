@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <fieldset>
+        <legend>필수</legend>
+        <label> 아이디 : <input type = "text" id = "nick" autofocus>
+            비밀번호 : 
+            <input type = "password">
+            <input type = "submit" value = "로그인" id = "login">
+            </label>
+            <br>
+            이름<input type = "text" id = "name">
+            <br>
+            이메일<input type = "email" id = "email">
+            <br>
+            연락처<input type="tel" id ="num" placeholder="-없이 입력">
+            <br>
+            생년월일<input type = "date" id = "birth">
+            <br>
+            메모<textarea id ="memo" cols = "40" rows="4"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>선택</legend>
+        <p><b>관심분야</b></p>
+        <label><input type = "checkbox" value ="축구" id = "soccer">축구</label>
+        <label><input type = "checkbox" value ="야구" id = "baseball">야구</label>
+        <label><input type = "checkbox" value ="농구" id = "basketball">농구</label>
+        <label><input type = "checkbox" value ="볼링" id = "bowling">볼링</label>
+        <label><input type = "checkbox" value ="배구" id = "vallyball">배구</label>
+        <p><b>성별</b></p>
+        <label><input type = "radio" name = "gender" id = "boy">남자</label>
+         <label>   <input type = "radio" name = "gender" id = "girl">여자</label>
+         <p><b>신발 사이즈</b></p>
+         신발<input type="range" min = "200" max="300" id = "shoes">size
+    </fieldset>
+    <input type="file"><br>
+
+    <label>
+    <input type = "submit" id = "join" value = "회원가입" onclick = "alert('회원가입 성공')">
+    <input type = "submit" id = "idd" value = "id보기" onclick = "alert(document.getElementById('nick').value)">
+    <input type ="submit" id = "seename" value = "이름보기" onclick = "alert(document.getElementById('name').value)">
+    <input type ="submit" id = "seemail" value = "이메일 보기" onclick = "alert(email.value)">
+    <input type ="submit" id = "seetel" value = "연락처보기" onclick = "alert(num.value)"> 
+    <input type ="submit" id = "seebirth" value = "생년월일보기" onclick = "alert(birth.value)"> 
+    </label>
+    <br><input type = "reset" value = "취소하기">
+    <br><select size="4">
+        <optgroup label = "1학년">
+        <option value="값1">1-1</option>
+        <option value="값2">1-2</option>
+        <option value="값3">1-3</option>
+        <option value="값4">1-4</option>
+        </optgroup>
+        <optgroup label = "2학년">
+        <option value="값5">2-1</option>
+        <option value="값6">2-2</option>
+        <option value="값7">2-3</option>
+        <option value="값8">2-4</option>
+        </optgroup>
+        <optgroup label = "3학년">
+        <option value="값9">3-1</option>
+        <option value="값10">3-2</option>
+        <option value="값11">3-3</option>
+        </optgroup>
+    </select>
+</body>
+</html>
