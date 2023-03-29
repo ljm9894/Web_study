@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join</title>
+</head>
+<body>
+    <form>
+    <center><table border ="１" width ="70%">
+        <tbody>
+            <tr><td colspan="2"><center><b>회원기본정보</b></td></center></tr>
+            <tr>
+                <td align="center"><b><i>아이디</i></b></td>
+                <td><input type ="text" id = "ID" name = "nick" size = 30 maxlength="30" autofocus required>4~12자의 영문 대소문자와 숫자로만 입력</td>
+            </tr>
+            <tr>
+                <td align="center"><b><i>비밀번호</i></b></td>
+                <td><input type ="password" id ="pwd" name = "password" size = 30 maxlength=30 placeholder ="4~12자의 대소문자와 숫자로 입력" required></td>
+            </tr>
+            <tr>
+                <td align="center"><b><i>비밀번호확인</i></b></td>
+                <td><input type = "password" id = "pwc" name ="passwordcheck" size = 30 maxlength=30 placeholder="4~12자의 대소문자와 숫자로 입력" required></td>
+            </tr>
+            <tr>
+                <td align="center"><b>메일주소</b></td>
+                <td><input type = "text" id ="email" name = "emailaddress">
+                <input type ="text" id ="domain" name = "domainaddress" placeholder="＠dgsw.hs.kr" readonly></td>
+
+            </tr>
+            <tr>
+                <td align="center"><b>연락처</b></td>
+                <td><input type = "tel" id ="phonenum" name = "phonenumber" placeholder="하이폰(-)을 빼고 입력해주세요"></td>
+            </tr>
+            <tr>
+                <td align="center"><b>수신여부</b></td>
+                <td><input type = "radio" id ="true" name ="connect">수신 
+                    <input type = "radio" id ="false" name ="connect" checked>수신거부
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><b>이름</b></td>
+                <td><input type ="text" id = "name" name = "myname" size = "30" maxlength = "30"></td>
+            </tr>
+        </tbody>
+    </table></center><br>
+</form>
+    <center><form><table border = "1" width = "70%">
+        <tbody>
+            <tr>
+                <td colspan ="4"><center><b>개인신상정보</b></center></td>
+            </tr>
+            <tr>
+                <td align="center"><b>주민 등록번호</b></td>
+                <td><input type="text" id = "peoplenum" name = "num" maxlength ="30" size = "30">예) 1234561234567</td>
+                <td align="center"><b>생일</b></td>
+                <td><select name ="year">
+                    <option value = "2004">2004</option>
+                    <option value = "2005">2005</option>
+                    <option value = "2006">2006</option>
+                </select>년
+                <select name ="month">
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "6">6</option>
+                </select>월
+                <select name = "day">
+                    <option value = "8">8</option>
+                    <option value = "9">9</option>
+                    <option value = "10">10</option>
+                </select>일</td>
+            </tr>
+            <tr>
+                <td align="center"><b>가족수</b></td>
+                <td><input type = "number" max = "10" min="1"></td>
+                <td align="center"><b>미팅일자</b></td>
+                <td><input type = "date" id = "meeting" name ="meetingday" max="2023-03-31" min ="2023-03-22"></td>
+            </tr>
+            <tr>
+                <td align="center"><b>가입경로</b></td>
+                <td><input type ="text" name = "like" list = "contentlist">
+                    <datalist id = "contentlist">
+                        <option value = "?"></option>
+                        <option value = "!"></option>
+                        <option value = "."></option>
+                    </datalist>
+                </td>
+                <td align="center"><b>관심분야</b></td>
+                <td><input type ="checkbox" id = "cpt" name = "computer" checked>컴퓨터
+                    <input type ="checkbox" id = "it" name = "internet" >인터넷
+                    <input type ="checkbox" id = "trip" name = "travel" >여행
+                    <input type ="checkbox" id = "seemovie" name = "movie" >영화감상
+                    <input type ="checkbox" id = "listenmusic" name = "music" >음악감상
+                </td>
+            </tr>
+            <tr>
+                <td align="center"><b>자기소개</b></td>
+                <td colspan="3"><textarea id ="memo" cols = "50" rows="5" maxlength="50"></textarea></td>
+            </tr>
+            <tr>
+                <td align="center"><b>첨부파일</b></td>
+                <td colspan ="3"><input type = "file" id = "fileupload" name ="file"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</center>
+    <br>
+    <label>
+        <center>
+            <a href ="./success.html" target = "_blank"><button type ="submit" value = "회원가입 "width = "100%"></button></a>
+            <input type="reset" value="리셋" id = "resett" name ="restart">
+            <a href ="./pop.html" target = "_blank"><button type ="submit" value = "팝업창열기 "width = "100%"></button></a>
+            <input type = "submit" value = "아이디알기" id = "knowid" name = "gotid" onclick = "alert(document.getElementById('ID').value)">
+            <input type = "submit" value = "메일주소로그남기기" id ="maillog" name ="mailaddress">
+            <button type = "submit" width = "10%"><img src = "img/button.jpg" width = "10%"></button>
+            <input type = "submit" value = "완료" id = "compleate" name = "success" onclick ="window.alert(document.getElementById('ID'))">
+    </center>
+    </label>
+</body>
+</html>
