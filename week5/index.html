@@ -7,6 +7,9 @@
     <title>join</title>
 </head>
 <body>
+    <form id = "hiddenID" name ="new form" hidden>
+        <input type = "text" id ="hidden"value = "hidden값">
+    </form>
     <form>
     <center><table border ="１" width ="70%">
         <tbody>
@@ -109,13 +112,13 @@
     <br>
     <label>
         <center>
-            <a href ="./success.html" target = "_blank"><button type ="submit" value = "회원가입 "width = "100%"></button></a>
+            <a href ="./success.html" target = "_blank"><button type ="submit" value = "회원가입 "width = "100%">회원가입</button></a>
             <input type="reset" value="리셋" id = "resett" name ="restart">
-            <a href ="./pop.html" target = "_blank"><button type ="submit" value = "팝업창열기 "width = "100%"></button></a>
+            <a href ="./pop.html" target = "_blank"><button type ="submit" value = "팝업창열기 "width = "100%">팝업창열기</button></a>
             <input type = "submit" value = "아이디알기" id = "knowid" name = "gotid" onclick = "alert(document.getElementById('ID').value)">
             <input type = "submit" value = "메일주소로그남기기" id ="maillog" name ="mailaddress">
-            <button type = "submit" width = "10%"><img src = "img/button.jpg" width = "10%"></button>
-            <input type = "submit" value = "완료" id = "compleate" name = "success" onclick ="window.alert(document.getElementById('ID'))">
+            <button type = "submit" width = "10%"><img src = "img/flower.jpg" width = "5%"></button>
+            <input type = "submit" value = "완료" id = "compleate" name = "success" onclick = "alert(document.getElementById('hidden').value)">
     </center>
     </label>
 </body>

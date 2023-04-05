@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size:20px;
+        }
+        h1{
+            font-family : 바탕;
+            font-size: 30;
+            text-align: center;
+        }
+        .acent{
+            font-size: 150%;
+            font-weight: 800;
+        }
+        .intalic{
+            font-style : italic;
+        }
+        .pink{
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+        img{
+            border : 1px solid black;
+            margin : 0;
+            padding : 100;
+            width : 50%;
+        }
+        
+        @font-face{
+            font-family : 'Ostrich';
+            /*src: local('Ostrich Sans');
+            /*url('fonts/ostrich-sans-bold.woff')format('truetype'),
+            url('fonts/ostrich-sans-bold.ttf') format('truetype'),
+            url('fonts/ostrich-sans-bold.svg') format('svg');*/
+            src:url('fonts/NanumGothic.eot');
+            src:url('fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/NanumGothic.woff') format('woff'),
+                url('fonts/NanumGothic.ttf') format('truetype'),
+                url('fotns/NanumGothic.svg') format('svg');
+            font-weight: bolder;
+            font-style :normal;
+        }
+    .wfont{
+        font-family : 'Ostrich', sans-serif;
+    }
+    .font_size{
+        font-size:14px;
+    }
+    table{
+        caption-side : bottom;
+        border: 1px solid black;
+        border-collapse : collapse;
+    }
+    td,th{
+        border: 1px dotted black;
+        padding: 10px;
+        text-align : center;
+    }
+    .gift{
+        font-weight : bolder;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow : 1px black;
+        font-size : 14px;
+    }
+    .giftAll{
+        color: deeppink;
+        text-align: justify;
+    }
+    .giftAndHomeFive{
+        text-decoration: underline;
+        text-shadow: 5px 5px 10px yellow;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .giftAndHomeFont{
+        letter-spacing: 0.3em;
+        text-align: left;
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>레드향</h1>
+    <p>껍질에 붉은 빛이 돌아 <span class="accent">레드향</span>이라 불린다.</p>
+    <p>레드향은 <span class = "pink">한라봉</span>과 <span class = "pink">귤</span>을 교배한 것으로</p>
+    <p class = "intalic">일반 귤보다 2~3배 크고, 과육이 붉고 통통하다</p>
+    <img src = "img/orange.avif">
+    <br>
+    <p class = "font_size">Using Default Fonts</p>
+    <p class="wfont font_size">Using Web Fonts</p>
+    <table>
+        <caption>선물용과 가정용 상품 구성</caption>
+        <thead>
+            <tr>
+                <th>용도</th>
+                <th>중량</th>
+                <th>갯수</t>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" class = "giftAndHomeFont">선물용</td>
+                <td class = "giftAll">3kg</td>
+                <td class = "giftAll">11~16과</td>
+                <td class = "giftAll">35,000원</td>
+            </tr>
+            <tr class = "giftAll giftAndHomeFive">
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>52,000원</td>
+            </tr>
+            <tr class = "gift giftAll">
+                <td>10kg</td>
+                <td>28~36과</td>
+                <td>69,000원</td>
+            </tr>
+        
+            <tr>
+                <td rowspan="3" class = "giftAndHomeFont">가정용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>30,000원</td>
+            </tr>
+            <tr class = "giftAndHomeFive">
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>47,000원</td>
+            </tr>
+            <tr>
+                <td>10kg</td>
+                <td>28~36과</td>
+                <td>64,000원</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
