@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body { background-image : url('../img/bg1.jpg');}
+    img{
+        width:30%;
+        float : left;
+        margin-right: 40px;
+    }
+    h1{
+        display: inline-block;
+        border:1px solid #000;
+    }
+    #padding1{
+        padding:20px 30px 40px 50px;
+    }
+    #padding2{
+        padding:20px 30px;
+    }
+    #padding3{
+        padding:20px;
+    }
+    * {box-sizing : border-box; }
+    nav ul { list-style : none;}
+    nav ul li{
+        display : inline-block;
+        padding : 20px;
+        margin: 0 20px;
+        border: 1px solid #222;
+    }
+    #pos1{
+        background-color: purple;
+        position: absolute;
+        left:500px;
+        top :50px;
+    }
+    #pos2{
+        background-color: purple;
+        position: absolute;
+        right:100px;
+        top:100px;
+    }
+    #pos3{
+        background-color: purple;
+        position: absolute;
+        left:100px;
+        bottom: 100px;
+    }
+    #static{ position: static;}
+    #relactive-1{position: relative;}
+    #relactive-2{
+        position: relative;
+        left:100px;
+        top:-50px;
+    }
+    #fixed{
+        width:100px;
+        height:100px;
+        background-color: #222;
+        position: fixed;
+        right: 30px;
+        top: 30px;
+    }
+
+</style> 
+<body>
+    <!--
+    <h1>레드향</h1>
+    <h1 id = "padding1">레드향</h1>
+    <h1 id = "padding2">레드향</h1>
+    <h1 id = "padding3">레드향</h1>
+    
+    <nav>
+        <ul>
+         <li>menu 1</li>
+         <li>menu 2</li>
+         <li>menu 3</li>
+         <li>menu 4</li>
+        </ul>
+      </nav>
+
+      <img src = "../img/tree.jpg">
+      <p>eoaijfeojeioajfoejifoejaofjeoiajfeojafeijfaoeif</p>
+    -->
+      <p id = "pos1">Ex atadifeaofje</p>
+      <p id = "pos2">Loreamdifaej</p>
+      <p id = "pos3">Excpejieofiovvoj</p>
+
+      <p id = "static"> Ex....</p>
+      <p id= "relactive-1">relactive-1</p>
+      <p id = "relactive-2">relactive-2</p>
+      <p id = "fixed"> fixed</p>
+
+      
+</body>
+</html>
