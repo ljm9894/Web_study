@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{background: url('../img/bg2.png') no-repeat right top fixed;}
+    div{
+        width:300px;
+        height:200px;
+
+        background: url('../img/bg3.png') no-repeat right top;
+}
+    #bg1 {
+        border : 5px solid #222;
+        background-origin: padding-box;
+        padding : 20px;
+        background-color: gray;
+        background-clip : content-box;
+    }
+    #bg2 {background-origin: border-box;}
+    #bg3 {background-origin: content-box;}
+</style>
+<body>
+    <div id = "bg1">
+        <h2>시리즈</h2>
+        <h3>-학습법</h3>
+        <p>그냥</p>
+    </div>
+    <div id = "bg2">
+        <h2>시리즈</h2>
+        <h3>-학습법</h3>
+        <p>몰라요.</p>
+    </div>
+    <div id = "bg3">
+        <h2>시리즈</h2>
+        <h3>-학습법</h3>
+        <p>알아서, 잘</p>
+    </div>
+</body>
+</html>
